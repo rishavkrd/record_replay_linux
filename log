@@ -1,0 +1,823 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.0 (root@ubuntu) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ) #61 SMP Mon Oct 3 13:40:20 CDT 2022
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0 root=UUID=a2e83cc8-9129-4a9d-ab9d-4adb7b5bfc20 ro nokaslr
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Legacy x87 FPU detected.
+[    0.000000] x86/fpu: Using 'lazy' FPU context switches.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffeffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.5 present.
+[    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] e820: last_pfn = 0x7fff0 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges disabled:
+[    0.000000]   00000-FFFFF uncachable
+[    0.000000] MTRR variable ranges disabled:
+[    0.000000]   0 disabled
+[    0.000000]   1 disabled
+[    0.000000]   2 disabled
+[    0.000000]   3 disabled
+[    0.000000]   4 disabled
+[    0.000000]   5 disabled
+[    0.000000]   6 disabled
+[    0.000000]   7 disabled
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- WT  
+[    0.000000] MTRR: Disabled
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] found SMP MP-table at [mem 0x0009fff0-0x0009ffff] mapped at [ffff88000009fff0]
+[    0.000000] Base memory trampoline at [ffff880000099000] 99000 size 24576
+[    0.000000] BRK [0x019fc000, 0x019fcfff] PGTABLE
+[    0.000000] BRK [0x019fd000, 0x019fdfff] PGTABLE
+[    0.000000] BRK [0x019fe000, 0x019fefff] PGTABLE
+[    0.000000] BRK [0x019ff000, 0x019fffff] PGTABLE
+[    0.000000] BRK [0x01a00000, 0x01a00fff] PGTABLE
+[    0.000000] RAMDISK: [mem 0x35ea4000-0x36f49fff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+[    0.000000] ACPI: XSDT 0x000000007FFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    0.000000] ACPI: FACP 0x000000007FFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    0.000000] ACPI: DSDT 0x000000007FFF0480 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 0x000000007FFF0200 000040
+[    0.000000] ACPI: FACS 0x000000007FFF0200 000040
+[    0.000000] ACPI: APIC 0x000000007FFF0240 00006C (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[    0.000000] ACPI: SSDT 0x000000007FFF02B0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x000000007ffeffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x000000007ffeffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000007ffeffff]
+[    0.000000] On node 0 totalpages: 524174
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 21 pages reserved
+[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 8128 pages used for memmap
+[    0.000000]   DMA32 zone: 520176 pages, LIFO batch:31
+[    0.000000] ACPI: PM-Timer IO Port: 0x4008
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] IOAPIC[0]: apic_id 4, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] e820: [mem 0x80000000-0xfebfffff] available for PCI devices
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] setup_percpu: NR_CPUS:512 nr_cpumask_bits:512 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 31 pages/cpu @ffff88007fc00000 s86360 r8192 d32424 u524288
+[    0.000000] pcpu-alloc: s86360 r8192 d32424 u524288 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 2 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 515961
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0 root=UUID=a2e83cc8-9129-4a9d-ab9d-4adb7b5bfc20 ro nokaslr
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000] Memory: 2032728K/2096696K available (5379K kernel code, 581K rwdata, 2724K rodata, 812K init, 692K bss, 63968K reserved, 0K cma-reserved)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=4.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=4
+[    0.000000] NR_IRQS:33024 nr_irqs:456 16
+[    0.000000] Console: colour VGA+ 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] tsc: Fast TSC calibration failed
+[    0.000000] tsc: Unable to calibrate against PIT
+[    0.000000] tsc: HPET/PMTIMER calibration failed
+[    0.000000] tsc: Marking TSC unstable due to could not calculate TSC khz
+[    0.028000] Calibrating delay loop... 6279.16 BogoMIPS (lpj=12558336)
+[    0.048000] pid_max: default: 32768 minimum: 301
+[    0.052000] ACPI: Core revision 20150930
+[    0.056000] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    0.060000] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.064000] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.068000] Initializing cgroup subsys io
+[    0.072000] Initializing cgroup subsys memory
+[    0.076000] Initializing cgroup subsys devices
+[    0.076000] Initializing cgroup subsys freezer
+[    0.080000] Initializing cgroup subsys net_cls
+[    0.084000] Initializing cgroup subsys perf_event
+[    0.084000] Initializing cgroup subsys net_prio
+[    0.088000] Initializing cgroup subsys pids
+[    0.096000] CPU: Physical Processor ID: 0
+[    0.096000] CPU: Processor Core ID: 0
+[    0.100000] mce: CPU supports 0 MCE banks
+[    0.104000] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.108000] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.124000] Freeing SMP alternatives memory: 20K (ffffffff81949000 - ffffffff8194e000)
+[    0.140000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.184000] smpboot: CPU0: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz (family: 0x6, model: 0x9e, stepping: 0x9)
+[    0.188000] Performance Events: unsupported p6 CPU model 158 no PMU driver, software events only.
+[    0.196000] x86: Booting SMP configuration:
+[    0.196000] .... node  #0, CPUs:      #1
+[    0.200000] NMI watchdog: disabled (cpu0): hardware events not enabled
+[    0.208000] NMI watchdog: Shutting down hard lockup detector on all cpus
+[    0.028000] mce: CPU supports 0 MCE banks
+[    0.028000]  #2
+[    0.028000] mce: CPU supports 0 MCE banks
+[    0.028000]  #3
+[    0.028000] mce: CPU supports 0 MCE banks
+[    0.232000] x86: Booted up 1 node, 4 CPUs
+[    0.236000] smpboot: Total of 4 processors activated (25116.67 BogoMIPS)
+[    0.244000] devtmpfs: initialized
+[    0.248000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.256000] pinctrl core: initialized pinctrl subsystem
+[    0.260000] NET: Registered protocol family 16
+[    0.272000] cpuidle: using governor ladder
+[    0.288000] cpuidle: using governor menu
+[    0.288000] ACPI: bus type PCI registered
+[    0.292000] PCI: Using configuration type 1 for base access
+[    0.316000] ACPI: Added _OSI(Module Device)
+[    0.320000] ACPI: Added _OSI(Processor Device)
+[    0.320000] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.324000] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.328000] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.340000] ACPI: Interpreter enabled
+[    0.340000] ACPI: (supports S0 S5)
+[    0.340000] ACPI: Using IOAPIC for interrupt routing
+[    0.344000] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.356000] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.360000] acpi PNP0A03:00: _OSC: OS supports [Segments MSI]
+[    0.360000] acpi PNP0A03:00: PCIe port services disabled; not requesting _OSC control
+[    0.364000] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.368000] PCI host bridge to bus 0000:00
+[    0.372000] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.372000] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.376000] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.380000] pci_bus 0000:00: root bus resource [mem 0x80000000-0xfdffffff window]
+[    0.384000] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.388000] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    0.388000] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    0.392000] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+[    0.392000] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+[    0.392000] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.396000] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.400000] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.404000] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.408000] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+[    0.408000] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+[    0.412000] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe0ffffff pref]
+[    0.412000] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+[    0.420000] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+[    0.420000] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+[    0.420000] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+[    0.424000] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+[    0.424000] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+[    0.424000] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+[    0.424000] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+[    0.428000] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+[    0.428000] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+[    0.428000] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+[    0.428000] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+[    0.432000] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+[    0.432000] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+[    0.436000] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    0.440000] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    0.444000] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+[    0.444000] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+[    0.444000] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+[    0.444000] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+[    0.444000] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+[    0.444000] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+[    0.444000] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+[    0.448000] pci_bus 0000:00: on NUMA node 0
+[    0.448000] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    0.456000] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[    0.460000] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    0.464000] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    0.468000] ACPI: Enabled 2 GPEs in block 00 to 07
+[    0.472000] vgaarb: setting as boot device: PCI:0000:00:02.0
+[    0.472000] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.476000] vgaarb: loaded
+[    0.476000] vgaarb: bridge control possible 0000:00:02.0
+[    0.480000] SCSI subsystem initialized
+[    0.484000] libata version 3.00 loaded.
+[    0.484000] ACPI: bus type USB registered
+[    0.484000] usbcore: registered new interface driver usbfs
+[    0.488000] usbcore: registered new interface driver hub
+[    0.488000] usbcore: registered new device driver usb
+[    0.492000] PCI: Using ACPI for IRQ routing
+[    0.496000] PCI: pci_cache_line_size set to 64 bytes
+[    0.496000] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    0.496000] e820: reserve RAM buffer [mem 0x7fff0000-0x7fffffff]
+[    0.496000] clocksource: Switched to clocksource refined-jiffies
+[    0.500000] pnp: PnP ACPI init
+[    0.500000] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.500000] pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+[    0.504000] pnp: PnP ACPI: found 2 devices
+[    0.552003] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.556003] clocksource: Switched to clocksource acpi_pm
+[    0.593085] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.593085] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.593085] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.593085] pci_bus 0000:00: resource 7 [mem 0x80000000-0xfdffffff window]
+[    0.597085] NET: Registered protocol family 2
+[    0.597418] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.597509] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[    0.605430] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.605430] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.605430] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.618906] NET: Registered protocol family 1
+[    0.621501] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.621501] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.621501] pci 0000:00:02.0: Video device with shadowed ROM
+[    0.621501] PCI: CLS 0 bytes, default 64
+[    0.621501] Unpacking initramfs...
+[    0.797144] Freeing initrd memory: 17048K (ffff880035ea4000 - ffff880036f4a000)
+[    0.797144] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.807854] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.811042] audit: initializing netlink subsys (disabled)
+[    0.818302] audit: type=2000 audit(1664820452.816:1): initialized
+[    0.818302] Initialise system trusted keyring
+[    0.852253] zbud: loaded
+[    0.880020] Key type asymmetric registered
+[    0.880383] Asymmetric key parser 'x509' registered
+[    0.880383] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    0.890373] io scheduler noop registered
+[    0.893824] io scheduler deadline registered (default)
+[    0.897499] io scheduler cfq registered
+[    0.901974] ACPI: AC Adapter [AC] (on-line)
+[    0.905790] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.912118] ACPI: Power Button [PWRF]
+[    0.916118] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    0.921821] ACPI: Sleep Button [SLPF]
+[    0.925872] ACPI: Battery Slot [BAT0] (battery present)
+[    0.933980] GHES: HEST is not enabled!
+[    0.938038] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.948303] Linux agpgart interface v0.103
+[    0.964273] loop: module loaded
+[    0.969411] ahci 0000:00:0d.0: version 3.0
+[    0.969411] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+[    0.969411] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[    0.969411] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[    0.986023] scsi host0: ahci
+[    0.986023] ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+[    0.986023] libphy: Fixed MDIO Bus: probed
+[    1.006702] tun: Universal TUN/TAP device driver, 1.6
+[    1.011132] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.019770] PPP generic driver version 2.4.2
+[    1.020423] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.020423] ehci-pci: EHCI PCI platform driver
+[    1.020423] ehci-platform: EHCI generic platform driver
+[    1.020423] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.020423] ohci-pci: OHCI PCI platform driver
+[    1.020423] ohci-pci 0000:00:06.0: OHCI PCI host controller
+[    1.020423] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+[    1.047199] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+[    1.105578] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+[    1.105578] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.105578] usb usb1: Product: OHCI PCI host controller
+[    1.105578] usb usb1: Manufacturer: Linux 4.4.0 ohci_hcd
+[    1.105578] usb usb1: SerialNumber: 0000:00:06.0
+[    1.130495] hub 1-0:1.0: USB hub found
+[    1.130495] hub 1-0:1.0: 12 ports detected
+[    1.138449] ohci-platform: OHCI generic platform driver
+[    1.139633] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.139633] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    1.154095] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.154095] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.168084] mousedev: PS/2 mouse device common for all mice
+[    1.173751] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    1.178654] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    1.184126] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    1.184342] i2c /dev entries driver
+[    1.193965] NET: Registered protocol family 17
+[    1.197120] Key type dns_resolver registered
+[    1.202038] microcode: CPU0 sig=0x906e9, pf=0x2, revision=0xffffffff
+[    1.205799] microcode: CPU1 sig=0x906e9, pf=0x2, revision=0xffffffff
+[    1.205832] microcode: CPU2 sig=0x906e9, pf=0x2, revision=0xffffffff
+[    1.215330] microcode: CPU3 sig=0x906e9, pf=0x2, revision=0xffffffff
+[    1.222937] microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[    1.232078] Loading compiled-in X.509 certificates
+[    1.232078] Loaded X.509 cert 'Build time autogenerated kernel key: 3ed3f7b00c17c7aee283b6235f991ef4248525bc'
+[    1.232078] zswap: loaded using pool lzo/zbud
+[    1.248468] rtc_cmos rtc_cmos: setting system clock to 2022-10-03 18:07:34 UTC (1664820454)
+[    1.330447] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    1.339288] ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[    1.339288] ata1.00: 20971520 sectors, multi 128: LBA48 NCQ (depth 31/32)
+[    1.348065] ata1.00: configured for UDMA/133
+[    1.352023] scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[    1.359932] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.359932] sd 0:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+[    1.359932] sd 0:0:0:0: [sda] Write Protect is off
+[    1.359932] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.359932] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.372208]  sda: sda1 sda2 < sda5 >
+[    1.372208] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.393063] Freeing unused kernel memory: 812K (ffffffff8187e000 - ffffffff81949000)
+[    1.456224] random: systemd-udevd urandom read with 12 bits of entropy available
+[    1.564429] usb 1-1: new full-speed USB device number 2 using ohci-pci
+[    1.564208] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    1.564208] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    1.592311] [drm] Initialized drm 1.1.0 20060810
+[    1.884584] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021
+[    1.889783] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+[    1.896632] usb 1-1: Product: USB Tablet
+[    1.900632] usb 1-1: Manufacturer: VirtualBox
+[    1.908369] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[    1.928423] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.963306] usbcore: registered new interface driver usbhid
+[    1.965822] usbhid: USB HID core driver
+[    1.978094] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input5
+[    1.986211] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[    2.440197] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:8b:8b:23
+[    2.442049] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    2.448486] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[    2.457703] [drm] DMA map mode: Using physical TTM page addresses.
+[    2.457722] [drm] Capabilities:
+[    2.457722] [drm]   Cursor.
+[    2.461865] [drm]   Cursor bypass 2.
+[    2.461865] [drm]   Alpha cursor.
+[    2.466521] [drm]   3D.
+[    2.466521] [drm]   Extended Fifo.
+[    2.469611] [drm]   Pitchlock.
+[    2.469611] [drm]   Irq mask.
+[    2.473783] [drm]   GMR.
+[    2.473783] [drm]   Traces.
+[    2.477049] [drm]   GMR2.
+[    2.477049] [drm]   Screen Object 2.
+[    2.477049] [drm] Max GMR ids is 8192
+[    2.483341] [drm] Max number of GMR pages is 1048576
+[    2.486004] [drm] Max dedicated hypervisor surface memory is 507904 kiB
+[    2.489557] [drm] Maximum display memory size is 16384 kiB
+[    2.489557] [drm] VRAM at 0xe0000000 size is 16384 kiB
+[    2.497178] [drm] MMIO at 0xf0000000 size is 2048 kiB
+[    2.497178] [drm] global init.
+[    2.504273] [TTM] Zone  kernel: Available graphics memory: 1025304 kiB
+[    2.505272] [TTM] Initializing pool allocator
+[    2.505272] [TTM] Initializing DMA pool allocator
+[    2.510811] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    2.514987] [drm] No driver support for vblank timestamp query.
+[    2.519148] [drm] Screen Objects Display Unit initialized
+[    2.522948] [drm] width 720
+[    2.524967] [drm] height 400
+[    2.524967] [drm] bpp 32
+[    2.529352] [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+[    2.533051] [drm] DX: no.
+[    2.576206] fbcon: svgadrmfb (fb0) is primary device
+[    2.616205] Console: switching to colour frame buffer device 100x37
+[    2.616205] [drm] Initialized vmwgfx 2.9.0 20150810 for 0000:00:02.0 on minor 0
+[    2.813248] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[    3.980586] systemd[1]: Failed to insert module 'autofs4': No such file or directory
+[    4.090111] random: nonblocking pool is initialized
+[    4.296488] systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+[    4.296488] systemd[1]: Detected virtualization kvm.
+[    4.296488] systemd[1]: Detected architecture x86-64.
+[    4.384395] systemd[1]: Set hostname to <ubuntu>.
+[    5.660248] systemd[1]: Created slice System Slice.
+[    5.664216] systemd[1]: Reached target System Time Synchronized.
+[    5.664216] systemd[1]: Created slice User and Session Slice.
+[    5.664216] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.664216] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    5.668238] systemd[1]: Listening on Journal Socket.
+[    5.681918] systemd[1]: Mounting POSIX Message Queue File System...
+[    5.700440] systemd[1]: Mounting Debug File System...
+[    5.704329] systemd[1]: Starting Nameserver information manager...
+[    5.705095] systemd[1]: Listening on Syslog Socket.
+[    5.714344] systemd[1]: Starting Uncomplicated firewall...
+[    5.714344] systemd[1]: Listening on Journal Socket (/dev/log).
+[    5.718785] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    5.718785] systemd[1]: Reached target Remote File Systems (Pre).
+[    5.720333] systemd[1]: Reached target Remote File Systems.
+[    5.721314] systemd[1]: Listening on Journal Audit Socket.
+[    5.721314] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[    5.725345] systemd[1]: Starting Set console keymap...
+[    5.725345] systemd[1]: Listening on udev Kernel Socket.
+[    5.792779] systemd[1]: Starting Load Kernel Modules...
+[    5.795152] systemd[1]: Starting Journal Service...
+[    5.800211] systemd[1]: Started Trigger resolvconf update for networkd DNS.
+[    5.800211] systemd[1]: Reached target Slices.
+[    5.800211] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[    5.805162] systemd[1]: Listening on udev Control Socket.
+[    5.805162] systemd[1]: Reached target Encrypted Volumes.
+[    5.805162] systemd[1]: Reached target User and Group Name Lookups.
+[    5.805162] systemd[1]: Started Uncomplicated firewall.
+[    5.845275] systemd[1]: Started Load Kernel Modules.
+[    5.849107] systemd[1]: Starting Apply Kernel Variables...
+[    5.993019] systemd[1]: Started Apply Kernel Variables.
+[    6.064112] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[    6.088325] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    6.088325] systemd[1]: Mounted POSIX Message Queue File System.
+[    6.088325] systemd[1]: Mounted Debug File System.
+[    6.110292] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+[    6.110539] systemd[1]: Started Remount Root and Kernel File Systems.
+[    6.116201] systemd[1]: Starting Load/Save Random Seed...
+[    6.156228] systemd[1]: Starting udev Coldplug all Devices...
+[    6.156228] systemd[1]: Started Nameserver information manager.
+[    6.160230] systemd[1]: Reached target Network (Pre).
+[    6.356344] systemd[1]: Started udev Coldplug all Devices.
+[    6.383650] systemd[1]: Started Load/Save Random Seed.
+[    6.409477] systemd[1]: Started Journal Service.
+[    6.693436] systemd-journald[189]: Received request to flush runtime journal from PID 1
+[    8.131385] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    8.131385] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input6
+[    8.251805] vboxguest: module verification failed: signature and/or required key missing - tainting kernel
+[    8.256178] vgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds
+[    8.260201] input: Unspecified device as /devices/pci0000:00/0000:00:04.0/input/input7
+[    8.262789] vboxguest: Successfully loaded version 6.1.36 r152435
+[    8.262789] vboxguest: misc device minor 56, IRQ 20, I/O port d040, MMIO at 00000000f0400000 (size 0x400000)
+[    8.262789] vboxguest: Successfully loaded version 6.1.36 r152435 (interface 0x00010004)
+[    8.388280] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+[    8.628260] Adding 998396k swap on /dev/sda5.  Priority:-1 extents:1 across:998396k FS
+[    9.193204] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   13.045369] vboxvideo: loading version 6.1.36 r152435
+[   13.268985] 18:07:46.522456 main     VBoxService 6.1.36 r152435 (verbosity: 0) linux.amd64 (Jul 19 2022 23:10:49) release log
+               18:07:46.522481 main     Log opened 2022-10-03T18:07:46.522396000Z
+[   13.268985] 18:07:46.522621 main     OS Product: Linux
+[   13.268985] 18:07:46.522695 main     OS Release: 4.4.0
+[   13.268985] 18:07:46.522767 main     OS Version: #61 SMP Mon Oct 3 13:40:20 CDT 2022
+[   13.268985] 18:07:46.522839 main     Executable: /opt/VBoxGuestAdditions-6.1.36/sbin/VBoxService
+               18:07:46.522860 main     Process ID: 665
+               18:07:46.522881 main     Package type: LINUX_64BITS_GENERIC
+[   13.275834] 18:07:46.527401 main     6.1.36 r152435 started. Verbose level = 0
+[   13.276255] 18:07:46.529265 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+[   13.402335] vboxsf: g_fHostFeatures=0x8000000f g_fSfFeatures=0x1 g_uSfLastFunction=29
+[   13.403249] vboxsf: Successfully loaded version 6.1.36 r152435
+[   13.403249] vboxsf: Successfully loaded version 6.1.36 r152435 on 4.4.0 SMP mod_unload modversions  (LINUX_VERSION_CODE=0x40400)
+[   13.404554] 18:41:39.900116 automount vbsvcAutomounterMountIt: Successfully mounted 'shared' on '/mnt/shared'
+[   23.288411] 18:41:49.779638 timesync vgsvcTimeSyncWorker: Radical guest time change: 2 043 243 611 000ns (GuestNow=1 664 822 509 779 593 000 ns GuestLast=1 664 820 466 535 982 000 ns fSetTimeLastLoop=true )
+[   25.758555] Hello from start_record 
+[   25.758555] Open # 2 
+[   25.758555] arg# 0 : 4197339 
+[   25.758555] arg# 1 : 32834 
+[   25.758555] arg# 2 : 256 
+[   25.758555] Open Sys calls added, total calls: 1 
+[   25.769216] write # 1 
+[   25.769216] arg# 0 : 3 
+[   25.769216] arg# 1 : 4197346 
+[   25.769216] arg# 2 : 11 
+[   25.769216] System call # 2 returns: 3 
+[   25.769216] System call # 1 returns: 11 
+[   25.769216] Write Sys calls added, total calls: 2 
+[   25.769216] lseek # 8 
+[   25.769216] arg# 0 : 3 
+[   25.769216] arg# 1 : 0 
+[   25.769216] arg# 2 : 0 
+[   25.769216] System call # 2 returns: 3 
+[   25.769216] System call # 1 returns: 11 
+[   25.769216] System call # 8 returns: 0 
+[   25.769216] lseek Sys calls added, total calls: 3 
+[   25.769216] read # 0 
+[   25.769216] arg# 0 : 3 
+[   25.769216] arg# 1 : 140723852889952 
+[   25.769216] arg# 2 : 16 
+[   25.769216] System call # 2 returns: 3 
+[   25.769216] System call # 1 returns: 11 
+[   25.769216] System call # 8 returns: 0 
+[   25.769216] System call # 0 returns: 11 
+[   25.769216] Read Sys calls added, total calls: 4 
+[   25.769216] close # 3 
+[   25.769216] arg# 0 : 3 
+[   25.769216] System call # 2 returns: 3 
+[   25.769216] System call # 1 returns: 11 
+[   25.769216] System call # 8 returns: 0 
+[   25.769216] System call # 0 returns: 11 
+[   25.769216] System call # 3 returns: 0 
+[   25.769216] Close Sys calls added, total calls: 5 
+[   25.769216] Initialize stop_record 
+[   25.769216] System call # 2 returns: 3. Copied to 00007ffcd3434560 with return value: 0 
+[   25.769216] System call # 1 returns: 11. Copied to 00007ffcd34345b0 with return value: 0 
+[   25.769216] System call # 8 returns: 0. Copied to 00007ffcd3434600 with return value: 0 
+[   25.769216] System call # 0 returns: 11. Copied to 00007ffcd3434650 with return value: 0 
+[   25.769216] System call # 3 returns: 0. Copied to 00007ffcd34346a0 with return value: 0 
+[   25.769216] Done Iterating, now inserting new record at record_id: 1 in records 
+[   25.769216] total syscall: 5 added successfully 
+[   25.769216] Store Check: Total 5 systemcalls for record id: 1 
+[   25.769216] System call # 2 returns: 3 
+[   25.769216] System call # 1 returns: 11 
+[   25.769216] System call # 8 returns: 0 
+[   25.769216] System call # 0 returns: 11 
+[   25.769216] System call # 3 returns: 0 
+[   25.769216] Hello from start_replay 
+[   25.769216] going through records id: 0 
+[  103.276193] Hello from start_record 
+[  103.276193] Open # 2 
+[  103.276193] arg# 0 : 4197339 
+[  103.276193] arg# 1 : 32834 
+[  103.276193] arg# 2 : 256 
+[  103.276193] Open Sys calls added, total calls: 1 
+[  103.276193] write # 1 
+[  103.276193] arg# 0 : 3 
+[  103.276193] arg# 1 : 4197346 
+[  103.276193] arg# 2 : 11 
+[  103.276193] System call # 2 returns: 3 
+[  103.276193] System call # 1 returns: 11 
+[  103.276193] Write Sys calls added, total calls: 2 
+[  103.276193] lseek # 8 
+[  103.276193] arg# 0 : 3 
+[  103.276193] arg# 1 : 0 
+[  103.276193] arg# 2 : 0 
+[  103.276193] System call # 2 returns: 3 
+[  103.276193] System call # 1 returns: 11 
+[  103.276193] System call # 8 returns: 0 
+[  103.276193] lseek Sys calls added, total calls: 3 
+[  103.276193] read # 0 
+[  103.276193] arg# 0 : 3 
+[  103.276193] arg# 1 : 140733069102016 
+[  103.276193] arg# 2 : 16 
+[  103.276193] System call # 2 returns: 3 
+[  103.276193] System call # 1 returns: 11 
+[  103.276193] System call # 8 returns: 0 
+[  103.276193] System call # 0 returns: 11 
+[  103.276193] Read Sys calls added, total calls: 4 
+[  103.276193] close # 3 
+[  103.276193] arg# 0 : 3 
+[  103.276193] System call # 2 returns: 3 
+[  103.276193] System call # 1 returns: 11 
+[  103.276193] System call # 8 returns: 0 
+[  103.276193] System call # 0 returns: 11 
+[  103.276193] System call # 3 returns: 0 
+[  103.276193] Close Sys calls added, total calls: 5 
+[  103.276193] Initialize stop_record 
+[  103.276193] System call # 2 returns: 3. Copied to 00007ffef89781c0 with return value: 0 
+[  103.276193] System call # 1 returns: 11. Copied to 00007ffef8978210 with return value: 0 
+[  103.276193] System call # 8 returns: 0. Copied to 00007ffef8978260 with return value: 0 
+[  103.276193] System call # 0 returns: 11. Copied to 00007ffef89782b0 with return value: 0 
+[  103.276193] System call # 3 returns: 0. Copied to 00007ffef8978300 with return value: 0 
+[  103.276193] going through records id: 5 
+[  103.276193] Done Iterating, now inserting new record at record_id: 5 in records 
+[  103.276193] total syscall: 5 added successfully 
+[  103.276193] Store Check: Total 5 systemcalls for record id: 5 
+[  103.276193] System call # 2 returns: 3 
+[  103.276193] System call # 1 returns: 11 
+[  103.276193] System call # 8 returns: 0 
+[  103.276193] System call # 0 returns: 11 
+[  103.276193] System call # 3 returns: 0 
+[  103.285254] Hello from start_replay 
+[  103.285254] going through records id: 0 
+[  103.285254] Replaying 5 systemcalls in rec of record id: 5 
+[  103.285254] Originally System call # 2 returns: 3 
+[  103.285254] Re-Executing Open 
+[  103.285254] Replayed System call # 2 returns: 3 
+[  103.285254] Replayed System call # 2 returns: 3. Copied to 00007ffef89786c0 with return value: 0 
+[  103.285254] Originally System call # 1 returns: 11 
+[  103.285254] Re-Executing Write 
+[  103.285254] Replayed System call # 1 returns: 11 
+[  103.285254] Replayed System call # 1 returns: 11. Copied to 00007ffef8978710 with return value: 0 
+[  103.285254] Originally System call # 8 returns: 0 
+[  103.285254] Re-Executing lseek 
+[  103.285254] Replayed System call # 8 returns: 0 
+[  103.285254] Replayed System call # 8 returns: 0. Copied to 00007ffef8978760 with return value: 0 
+[  103.285254] Originally System call # 0 returns: 11 
+[  103.285254] Re-Executing Read 
+[  103.285254] Replayed System call # 0 returns: 11 
+[  103.285254] Replayed System call # 0 returns: 11. Copied to 00007ffef89787b0 with return value: 0 
+[  103.285254] Originally System call # 3 returns: 0 
+[  103.285254] Re-Executing Close 
+[  103.285254] Replayed System call # 3 returns: 0 
+[  103.285254] Replayed System call # 3 returns: 0. Copied to 00007ffef8978800 with return value: 0 
+[  171.193929] Hello from start_record 
+[  171.193929] Open # 2 
+[  171.193929] arg# 0 : 4197339 
+[  171.193929] arg# 1 : 32834 
+[  171.193929] arg# 2 : 256 
+[  171.193929] Open Sys calls added, total calls: 1 
+[  171.193929] write # 1 
+[  171.193929] arg# 0 : 3 
+[  171.193929] arg# 1 : 4197346 
+[  171.193929] arg# 2 : 11 
+[  171.193929] System call # 2 returns: 3 
+[  171.193929] System call # 1 returns: 11 
+[  171.193929] Write Sys calls added, total calls: 2 
+[  171.193929] lseek # 8 
+[  171.193929] arg# 0 : 3 
+[  171.193929] arg# 1 : 0 
+[  171.193929] arg# 2 : 0 
+[  171.193929] System call # 2 returns: 3 
+[  171.193929] System call # 1 returns: 11 
+[  171.193929] System call # 8 returns: 0 
+[  171.193929] lseek Sys calls added, total calls: 3 
+[  171.193929] read # 0 
+[  171.193929] arg# 0 : 3 
+[  171.193929] arg# 1 : 140732316824528 
+[  171.193929] arg# 2 : 16 
+[  171.193929] System call # 2 returns: 3 
+[  171.193929] System call # 1 returns: 11 
+[  171.193929] System call # 8 returns: 0 
+[  171.193929] System call # 0 returns: 11 
+[  171.193929] Read Sys calls added, total calls: 4 
+[  171.193929] close # 3 
+[  171.193929] arg# 0 : 3 
+[  171.193929] System call # 2 returns: 3 
+[  171.193929] System call # 1 returns: 11 
+[  171.193929] System call # 8 returns: 0 
+[  171.193929] System call # 0 returns: 11 
+[  171.193929] System call # 3 returns: 0 
+[  171.193929] Close Sys calls added, total calls: 5 
+[  171.193929] Initialize stop_record 
+[  171.193929] System call # 2 returns: 3. Copied to 00007ffecbc0a9d0 with return value: 0 
+[  171.193929] System call # 1 returns: 11. Copied to 00007ffecbc0aa20 with return value: 0 
+[  171.193929] System call # 8 returns: 0. Copied to 00007ffecbc0aa70 with return value: 0 
+[  171.193929] System call # 0 returns: 11. Copied to 00007ffecbc0aac0 with return value: 0 
+[  171.193929] System call # 3 returns: 0. Copied to 00007ffecbc0ab10 with return value: 0 
+[  171.193929] going through records id: 7 
+[  171.193929] going through records id: 7 
+[  171.193929] Done Iterating, now inserting new record at record_id: 7 in records 
+[  171.193929] total syscall: 5 added successfully 
+[  171.193929] Store Check: Total 5 systemcalls for record id: 7 
+[  171.193929] System call # 2 returns: 3 
+[  171.193929] System call # 1 returns: 11 
+[  171.193929] System call # 8 returns: 0 
+[  171.193929] System call # 0 returns: 11 
+[  171.193929] System call # 3 returns: 0 
+[  171.200293] Hello from start_replay 
+[  171.200293] going through records id: 0 
+[  171.200293] going through records id: 0 
+[  171.200293] Replaying 5 systemcalls in rec of record id: 5 
+[  171.200293] Originally System call # 2 returns: 3 
+[  171.200293] Re-Executing Open 
+[  171.200293] Replayed System call # 2 returns: 3 
+[  171.200293] Replayed System call # 2 returns: 3. Copied to 00007ffecbc0aed0 with return value: 0 
+[  171.200293] Originally System call # 1 returns: 11 
+[  171.200293] Re-Executing Write 
+[  171.200293] Replayed System call # 1 returns: 11 
+[  171.200293] Replayed System call # 1 returns: 11. Copied to 00007ffecbc0af20 with return value: 0 
+[  171.200293] Originally System call # 8 returns: 0 
+[  171.200293] Re-Executing lseek 
+[  171.200293] Replayed System call # 8 returns: 0 
+[  171.200293] Replayed System call # 8 returns: 0. Copied to 00007ffecbc0af70 with return value: 0 
+[  171.200293] Originally System call # 0 returns: 11 
+[  171.200293] Re-Executing Read 
+[  171.200293] Replayed System call # 0 returns: 11 
+[  171.200293] Replayed System call # 0 returns: 11. Copied to 00007ffecbc0afc0 with return value: 0 
+[  171.200293] Originally System call # 3 returns: 0 
+[  171.200293] Re-Executing Close 
+[  171.200293] Replayed System call # 3 returns: 0 
+[  171.200293] Replayed System call # 3 returns: 0. Copied to 00007ffecbc0b010 with return value: 0 
+[  171.200293] Originally System call # 0 returns: -2122265808 
+[  171.200293] Re-Executing Read 
+[  205.393042] Hello from start_record 
+[  205.393042] Open # 2 
+[  205.393042] arg# 0 : 4197339 
+[  205.393042] arg# 1 : 32834 
+[  205.393042] arg# 2 : 256 
+[  205.393042] Open Sys calls added, total calls: 1 
+[  205.393042] write # 1 
+[  205.393042] arg# 0 : 3 
+[  205.393042] arg# 1 : 4197346 
+[  205.393042] arg# 2 : 11 
+[  205.393042] System call # 2 returns: 3 
+[  205.393042] System call # 1 returns: 11 
+[  205.393042] Write Sys calls added, total calls: 2 
+[  205.393042] lseek # 8 
+[  205.393042] arg# 0 : 3 
+[  205.393042] arg# 1 : 0 
+[  205.393042] arg# 2 : 0 
+[  205.393042] System call # 2 returns: 3 
+[  205.393042] System call # 1 returns: 11 
+[  205.393042] System call # 8 returns: 0 
+[  205.393042] lseek Sys calls added, total calls: 3 
+[  205.393042] read # 0 
+[  205.393042] arg# 0 : 3 
+[  205.393042] arg# 1 : 140727441921088 
+[  205.393042] arg# 2 : 16 
+[  205.393042] System call # 2 returns: 3 
+[  205.393042] System call # 1 returns: 11 
+[  205.393042] System call # 8 returns: 0 
+[  205.393042] System call # 0 returns: 11 
+[  205.393042] Read Sys calls added, total calls: 4 
+[  205.393042] close # 3 
+[  205.393042] arg# 0 : 3 
+[  205.393042] System call # 2 returns: 3 
+[  205.393042] System call # 1 returns: 11 
+[  205.393042] System call # 8 returns: 0 
+[  205.393042] System call # 0 returns: 11 
+[  205.393042] System call # 3 returns: 0 
+[  205.393042] Close Sys calls added, total calls: 5 
+[  205.393042] Initialize stop_record 
+[  205.393042] System call # 2 returns: 3. Copied to 00007ffda92f8a40 with return value: 0 
+[  205.393042] System call # 1 returns: 11. Copied to 00007ffda92f8a90 with return value: 0 
+[  205.393042] System call # 8 returns: 0. Copied to 00007ffda92f8ae0 with return value: 0 
+[  205.393042] System call # 0 returns: 11. Copied to 00007ffda92f8b30 with return value: 0 
+[  205.393042] System call # 3 returns: 0. Copied to 00007ffda92f8b80 with return value: 0 
+[  205.393042] going through records id: 2 
+[  205.393042] going through records id: 2 
+[  205.393042] going through records id: 2 
+[  205.393042] Done Iterating, now inserting new record at record_id: 2 in records 
+[  205.393042] total syscall: 5 added successfully 
+[  205.393042] Store Check: Total 5 systemcalls for record id: 2 
+[  205.393042] System call # 2 returns: 3 
+[  205.393042] System call # 1 returns: 11 
+[  205.393042] System call # 8 returns: 0 
+[  205.393042] System call # 0 returns: 11 
+[  205.393042] System call # 3 returns: 0 
+[  205.400353] Hello from start_replay 
+[  205.400353] going through records id: 0 
+[  205.400353] going through records id: 0 
+[  205.400353] going through records id: 0 
+[  205.400353] Replaying 5 systemcalls in rec of record id: 5 
+[  205.400353] Originally System call # 2 returns: 3 
+[  205.400353] Re-Executing Open 
+[  205.400353] Replayed System call # 2 returns: 3 
+[  205.400353] Replayed System call # 2 returns: 3. Copied to 00007ffda92f8f40 with return value: 0 
+[  205.400353] Originally System call # 1 returns: 11 
+[  205.400353] Re-Executing Write 
+[  205.400353] Replayed System call # 1 returns: 11 
+[  205.400353] Replayed System call # 1 returns: 11. Copied to 00007ffda92f8f90 with return value: 0 
+[  205.400353] Originally System call # 8 returns: 0 
+[  205.400353] Re-Executing lseek 
+[  205.400353] Replayed System call # 8 returns: 0 
+[  205.400353] Replayed System call # 8 returns: 0. Copied to 00007ffda92f8fe0 with return value: 0 
+[  205.400353] Originally System call # 0 returns: 11 
+[  205.400353] Re-Executing Read 
+[  205.400353] Replayed System call # 0 returns: 11 
+[  205.400353] Replayed System call # 0 returns: 11. Copied to 00007ffda92f9030 with return value: 0 
+[  205.400353] Originally System call # 3 returns: 0 
+[  205.400353] Re-Executing Close 
+[  205.400353] Replayed System call # 3 returns: 0 
+[  205.400353] Replayed System call # 3 returns: 0. Copied to 00007ffda92f9080 with return value: 0 
+[  205.400353] Originally System call # 1664822456 returns: -2122265808 
+[  205.400353] No matching case found 
+[  444.408195] Hello from start_record 
+[  444.408195] Open # 2 
+[  444.408195] arg# 0 : 4197339 
+[  444.408195] arg# 1 : 32834 
+[  444.408195] arg# 2 : 256 
+[  444.408195] Open Sys calls added, total calls: 1 
+[  444.408195] write # 1 
+[  444.408195] arg# 0 : 3 
+[  444.408195] arg# 1 : 4197346 
+[  444.408195] arg# 2 : 11 
+[  444.408195] System call # 2 returns: 3 
+[  444.408195] System call # 1 returns: 11 
+[  444.408195] Write Sys calls added, total calls: 2 
+[  444.408195] lseek # 8 
+[  444.408195] arg# 0 : 3 
+[  444.408195] arg# 1 : 0 
+[  444.408195] arg# 2 : 0 
+[  444.408195] System call # 2 returns: 3 
+[  444.408195] System call # 1 returns: 11 
+[  444.408195] System call # 8 returns: 0 
+[  444.408195] lseek Sys calls added, total calls: 3 
+[  444.408195] read # 0 
+[  444.408195] arg# 0 : 3 
+[  444.408195] arg# 1 : 140731503326880 
+[  444.408195] arg# 2 : 16 
+[  444.408195] System call # 2 returns: 3 
+[  444.408195] System call # 1 returns: 11 
+[  444.408195] System call # 8 returns: 0 
+[  444.408195] System call # 0 returns: 11 
+[  444.408195] Read Sys calls added, total calls: 4 
+[  444.408195] close # 3 
+[  444.408195] arg# 0 : 3 
+[  444.408195] System call # 2 returns: 3 
+[  444.408195] System call # 1 returns: 11 
+[  444.408195] System call # 8 returns: 0 
+[  444.408195] System call # 0 returns: 11 
+[  444.408195] System call # 3 returns: 0 
+[  444.408195] Close Sys calls added, total calls: 5 
+[  444.408195] Initialize stop_record 
+[  444.408195] System call # 2 returns: 3. Copied to 00007ffe9b43aca0 with return value: 0 
+[  444.408195] System call # 1 returns: 11. Copied to 00007ffe9b43acf0 with return value: 0 
+[  444.408195] System call # 8 returns: 0. Copied to 00007ffe9b43ad40 with return value: 0 
+[  444.408195] System call # 0 returns: 11. Copied to 00007ffe9b43ad90 with return value: 0 
+[  444.408195] System call # 3 returns: 0. Copied to 00007ffe9b43ade0 with return value: 0 
+[  444.408195] going through records id: 2 
+[  444.408195] BUG: unable to handle kernel paging request at ffffffffffffffea
+[  444.408195] IP: [<ffffffff8104298a>] SyS_stop_record+0x2ba/0x2e0
+[  444.408195] PGD 17f5067 PUD 17f7067 PMD 0 
+[  444.408195] Oops: 0002 [#1] SMP 
+[  444.408195] Modules linked in: vboxsf(OE) vboxvideo(OE) i2c_piix4 vboxguest(OE) video hid_generic usbhid hid vmwgfx drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops ttm psmouse drm e1000
+[  444.410203] CPU: 2 PID: 800 Comm: test_sys Tainted: G           OE   4.4.0 #61
+[  444.410203] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  444.410203] task: ffff88007a0e4040 ti: ffff88007d16c000 task.ti: ffff88007d16c000
+[  444.410203] RIP: 0010:[<ffffffff8104298a>]  [<ffffffff8104298a>] SyS_stop_record+0x2ba/0x2e0
+[  444.410203] RSP: 0018:ffff88007d16ff18  EFLAGS: 00010246
+[  444.410203] RAX: ffffffffffffffea RBX: ffff88007a0e4040 RCX: 0000000000000006
+[  444.410203] RDX: ffff88007cb87b88 RSI: 0000000000000246 RDI: ffff88007fd0cb10
+[  444.410203] RBP: ffff88007d16ff48 R08: 000000000000000a R09: 0000000000000317
+[  444.410203] R10: 0000000000000690 R11: 0000000000000317 R12: ffff88007a100f98
+[  444.410203] R13: 0000000000000005 R14: ffff88007d3b39c0 R15: 0000000000000000
+[  444.410203] FS:  00007fbc77b22700(0000) GS:ffff88007fd00000(0000) knlGS:0000000000000000
+[  444.410203] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  444.410203] CR2: ffffffffffffffea CR3: 0000000035d04000 CR4: 00000000000006e0
+[  444.410203] Stack:
+[  444.410203]  ffff88007a100f80 0000000000000000 0000000000400600 00007ffe9b43b7a0
+[  444.410203]  0000000000000000 0000000000000000 00007ffe9b43ac70 ffffffff8153e997
+[  444.410203]  0000000000000000 0000000000000000 00007ffe9b43b7a0 0000000000400600
+[  444.410203] Call Trace:
+[  444.410203]  [<ffffffff8153e997>] entry_SYSCALL_64_fastpath+0x12/0x66
+[  444.410203] Code: 88 05 00 00 41 39 06 74 16 49 8b 46 08 48 3d 30 cb 80 81 4c 8d 70 f8 0f 84 c3 fe ff ff eb cd 49 8b 46 10 49 8b 56 08 48 89 42 08 <48> 89 10 48 b8 00 01 00 00 00 00 ad de 49 89 46 08 48 b8 00 02 
+[  444.410203] RIP  [<ffffffff8104298a>] SyS_stop_record+0x2ba/0x2e0
+[  444.410203]  RSP <ffff88007d16ff18>
+[  444.410203] CR2: ffffffffffffffea
+[  444.410203] ---[ end trace a47faa22a442546e ]---
